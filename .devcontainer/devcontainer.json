@@ -1,0 +1,8 @@
+{
+  "name": "picoPod",
+  "build": {
+    "dockerfile": "Dockerfile",
+  },
+  "remoteUser": "vscode",
+  "runArgs": ["--privileged"],
+}
