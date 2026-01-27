@@ -12,4 +12,4 @@ RUN cd /opt &&\
     git submodule update --init
 
 ENV PICO_SDK_PATH=/opt/pico-sdk
-RUN echo alias pmake="cp /opt/pico-sdk/external/pico_sdk_import.cmake ./"
+RUN echo 'alias pmake="cp /opt/pico-sdk/external/pico_sdk_import.cmake ./"' >> /etc/bash.bashrc
