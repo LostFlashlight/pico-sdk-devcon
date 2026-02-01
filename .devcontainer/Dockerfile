@@ -13,3 +13,4 @@ RUN cd /opt &&\
 
 ENV PICO_SDK_PATH=/opt/pico-sdk
 RUN echo 'alias pmake="cp /opt/pico-sdk/external/pico_sdk_import.cmake ./ && cp /opt/pico-sdk/external/pico_sdk_import.cmake ."' >> /etc/bash.bashrc
+RUN git config --global --add safe.directory "*" && git config --global init.defaultBranch main 
