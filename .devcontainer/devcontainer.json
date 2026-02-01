@@ -16,7 +16,7 @@
       }
     }
   },
-  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/ziglings,type=bind,Z",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/picoPod,type=bind,Z",
   "remoteUser": "vscode",
   "runArgs": ["--privileged"],
   "mounts":["source=/dev/,target=/dev/,type=bind"]
