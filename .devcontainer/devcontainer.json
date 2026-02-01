@@ -5,5 +5,5 @@
   },
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/ziglings,type=bind,Z",
   "remoteUser": "vscode",
-  "runArgs": ["--privileged"],
+  "runArgs": ["--privileged", "-v /dev/bus/usb:/dev/bus/usb"],
 }
