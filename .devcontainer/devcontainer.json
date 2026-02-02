@@ -5,19 +5,18 @@
   },
   "customizations": {
     "vscode": {
-       "extensions": [
-        "raspberry-pi.raspberry-pi-pico",
-        "llvm-vs-code-extensions.vscode-clangd"
-      ],
+      "extensions": ["raspberry-pi.raspberry-pi-pico"],
       "settings": {
         "raspberry-pi-pico.sdkPath": "/opt/pico-sdk",
         "raspberry-pi-pico.openocdPath": "/usr/bin/openocd",
-        "raspberry-pi-pico.cmakePath": "/usr/bin/cmake"
-      }
-    }
+        "raspberry-pi-pico.cmakePath": "/usr/bin/cmake",
+        "raspberry-pi-pico.autoConnect": false,
+        "raspberry-pi-pico.manualComDevice": "/dev/ttyACM0",
+      },
+    },
   },
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/picoPod,type=bind,Z",
   "remoteUser": "vscode",
   "runArgs": ["--privileged"],
-  "mounts":["source=/dev/,target=/dev/,type=bind"]
+  "mounts": ["source=/dev/ttyACM0,target=/dev/ttyACM0,type=bind"],
 }
