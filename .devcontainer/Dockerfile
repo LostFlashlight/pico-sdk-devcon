@@ -4,9 +4,8 @@ FROM mcr.microsoft.com/devcontainers/cpp:ubuntu
 # create a user matching host UID and GID
 
 RUN apt-get update && \
-    #add-apt-repository -y universe && \
     apt-get update && \
-    apt-get install -y build-essential gcc-arm-none-eabi libnewlib-arm-none-eabi minicom
+    apt-get install -y build-essential gcc-arm-none-eabi libnewlib-arm-none-eabi minicom clangd
 
 RUN cd /opt &&\
     git clone -b master https://github.com/raspberrypi/pico-sdk.git && \

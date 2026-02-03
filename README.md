@@ -11,11 +11,11 @@ check if you have access to the pico on host
 ls -l /dev/ttyACM*
 ```
 
-then make sure you are in the ```dialog group```
+then make sure you are in the ```dialog group``` on host
 ```code
 groups
 ```
-and if you are not put yourself in it 
+and if you are not, put yourself in it 
 ```code
 sudo usermod -aG dialout $USER
 ```
